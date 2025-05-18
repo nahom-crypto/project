@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../N.JPG">
+    <title>The smartest login page</title>
+    <link rel="stylesheet" href="page.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body background="./photo/wolf.jpg">
+    <header>
+        <h2 class="logo">N</h2>
+        <nav class="link">
+            <a href="Home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">service</a>
+            <a href="CONTACT.HTML">contact</a>
+            <button class="btnlogin-popup">login</button>
+        </nav>
+    </header>
+ <div class="wrapper active-popup">
+<span class="icon-close">X</span>
+
+    <div class="form-box login">
+        <h2 >login</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="email" required maxlength="33">
+                <label>E-mail</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="password" required maxlength="20" minlength="5">
+                <label>password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                 <a href="#">forgot password?</a>
+            </div>
+            <button type="submit" class="btn" onclick="alert('you are Successfully login')">login</button>
+            <div class="login-register">
+                <p>Don't have an account?  <a href="#" class="register-link">  register</a></p>
+            </div>
+        </form>
+    </div>
+    <div class="form-box register">
+        <h2>Registeration</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="text" required maxlength="33">
+                <label>username</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="email" required maxlength="34">
+                <label>E-mail</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="password" required maxlength="20" minlength="5">
+                <label>password</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="password" required maxlength="20" minlength="5">
+                <label>Confirm Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">I agree to the terms & condition</label>
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <div class="login-register">
+                <p>already have an account?  <a href="#" class="login-link"> login</a></p>
+            </div>
+        </form>
+    </div>
+ </div>
+<script src="script.js"></script>
+
+
+</body>
+</html>
